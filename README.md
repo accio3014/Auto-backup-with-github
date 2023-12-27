@@ -5,7 +5,7 @@
 ## Contents
 - Make script
 - Setup crontab in Linux
-
+   
 ### Make script
 Before making an automation backup script, the following requirements:
 - Connect to the internet and install git on Linux
@@ -15,7 +15,7 @@ Before making an automation backup script, the following requirements:
 Go to link:   
 https://github.com/settings/tokens    
 And make token(classic). You must absolutely check the repo checkbox! 
-
+   
 The code below is an automation script:
 ```
 #!/bin/bash
@@ -41,7 +41,7 @@ git remote set-url origin https://$USERNAME:$TOKEN@github.com/$USERNAME/$REPO.gi
 # Replace 'main' with your default branch name if it's not 'main'
 git push origin main --force
 ```
-
+   
 ### Setup crontab in Linux
 To set up crontab, proceed as follows:
 ```
@@ -53,5 +53,5 @@ $ crontab -e
 */10 * * * * /path/to/your/fileName.sh
 # The above line means to run the script every 10 minutes every day.
 ```
-
+   
 If you set this up, it will automatically be backed up to GitHub.
