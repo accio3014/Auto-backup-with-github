@@ -44,6 +44,11 @@ git remote set-url origin https://$USERNAME:$TOKEN@github.com/$USERNAME/$REPO.gi
 git push origin main --force
 ```
    
+The script must have execution permission to operate.
+```
+$ chmod +x fileName.sh
+```
+   
 ---
 
 ### Setup crontab in Linux
