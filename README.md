@@ -5,7 +5,9 @@
 ## Contents
 - Make script
 - Setup crontab in Linux
-   
+
+---
+
 ### Make script
 Before making an automation backup script, the following requirements:
 - Connect to the internet and install git on Linux
@@ -42,6 +44,8 @@ git remote set-url origin https://$USERNAME:$TOKEN@github.com/$USERNAME/$REPO.gi
 git push origin main --force
 ```
    
+---
+
 ### Setup crontab in Linux
 To set up crontab, proceed as follows:
 ```
